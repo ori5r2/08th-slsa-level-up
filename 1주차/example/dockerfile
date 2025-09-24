@@ -3,7 +3,7 @@ FROM golang:1.24 AS builder
 WORKDIR /app
 COPY . .
 
-RUN go mod init demo
+RUN go mod init demo | true
 RUN go build -o hello-slsa
 
 FROM gcr.io/distroless/base-debian12
