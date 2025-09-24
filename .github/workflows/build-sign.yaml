@@ -23,7 +23,7 @@ jobs:
       - name: Build Docker image
         run: |
           IMAGE=ghcr.io/${{ github.repository }}:sha-${{ github.sha }}
-          docker build -t $IMAGE -f 1주차/example/ .
+          docker build -t $IMAGE -f 1주차/example/dockerfile .
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
 
       - name: Push image
