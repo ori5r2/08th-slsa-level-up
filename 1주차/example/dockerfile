@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 
 RUN go mod init demo || true
-RUN go build -o hello-slsa demo.go
+RUN go build -o hello-slsa .
 
 FROM gcr.io/distroless/base-debian12
 COPY --from=builder /app/hello-slsa /hello-slsa
