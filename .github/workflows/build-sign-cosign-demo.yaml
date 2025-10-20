@@ -36,7 +36,7 @@ jobs:
             -o cosign && chmod +x cosign && sudo mv cosign /usr/local/bin/
 
       - name: Sign image with cosign (keyless)
-        run: cosign sign $IMAGE --yes
+        run: cosign sign --keyless $IMAGE
 
       - name: Update Kubernetes Manifest
         run: |
