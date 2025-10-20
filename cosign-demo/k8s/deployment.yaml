@@ -17,6 +17,6 @@ spec:
         - name: ghcrsecret
       containers:
         - name: app
-          image: ghcr.io/ori5r2/slsa:sha-67a15953560211feda9d99d58306063a318e15aa
+          image: ghcr.io/ori5r2/slsa:sha-2771cebe7c9fcc824b1cbbdf5bf3b6e72826383e
           ports:
             - containerPort: 8080
