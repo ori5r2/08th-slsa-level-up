@@ -13,8 +13,10 @@ spec:
       labels:
         app: slsa-demo
     spec:
+      imagePullSecrets:
+        - name: ghcrsecret
       containers:
         - name: app
-          image: ori5r2/slsa
+          image: ghcr.io/ori5r2/slsa
           ports:
             - containerPort: 8080
