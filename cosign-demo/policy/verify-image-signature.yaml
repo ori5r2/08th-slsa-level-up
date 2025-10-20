@@ -25,4 +25,4 @@ spec:
                     rekor:
                       url: https://rekor.sigstore.dev
                     issuer: "https://token.actions.githubusercontent.com"
-                    subject: "https://github.com/ori5r2/08th-slsa-level-up/.github/workflows/build-sign.yaml@refs/heads/main"
+                    subject: "https://github.com/ori5r2/08th-slsa-level-up/.github/workflows/build-sign-cosign-demo.yaml@refs/heads/main"
