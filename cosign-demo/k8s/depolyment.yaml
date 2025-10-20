@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: ori5r2/slsa:sha-6b79dbbd19d80635477696d28f3b48329671a386
+          image: ori5r2/slsa
           ports:
             - containerPort: 8080
