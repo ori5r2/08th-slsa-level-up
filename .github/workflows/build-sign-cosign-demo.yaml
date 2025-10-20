@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          IMAGE=ori5r2/slsa:sha-${{ github.sha }}
+          IMAGE=ghcr.io/ori5r2/slsa:sha-${{ github.sha }}
           docker build -t $IMAGE cosign-demo
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
 
